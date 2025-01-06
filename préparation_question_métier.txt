@@ -1,0 +1,19 @@
+Pour savoir si vraiment le modéle genere la bonne réponse( caculer de l'accuracy), voici ces questions preparer pour comprendre des trucs dans la partie métier "juridique":
+
+* 1 : Quels sont les cas d'usage les plus critiques que nous devrions tester en priorité ? des problématiques que vous pouvez les voire chaque jour 
+
+
+* 2 : Avez-vous des exigences particulières concernant le format ou la structure des réponses du chatbot ?
+
+
+* 3 : Comment le chatbot devrait-il réagir face à des questions hors de son champ de compétence ? ::: vous l'aimez afficher une prompt où il demande pardon et que l'utilisateur essaye d'ecrire des questions qui a une relation avec du juridique ou il essaye de faire de la "recommendation"  ex: est ce que vous voulez dire cela ou cela ??
+- "Je ne peux pas répondre" ? Est-ce qu'on redirige vers un avocat : dans le cas ou la question est plus complex  ater résolu avec un chatbot ? Est-ce qu'on demande plus de précisions ?::: n'est pas claire ou incomplète
+
+* 4.1  : Y a-t-il des sujets ou des types de conseils que le chatbot ne devrait jamais aborder ? ::generation d'une réponse dangereuse ::: s'il y a un type de question que le modéle ne doit pas genere une réponse precise comme en chat normal "donne moi les outils et comment creer une bombe"
+
+========== 4.1 et 4.2 sont proche
+
+* 4.2  :Pour savoir si le chatbot donne une mauvaise réponse ? :: à qui on va s'addresser pour corriger les erreurs generer :: car meme si le modéle genere on va faire cela de notre part 
+
+**** Quels sont les critères précis qui déterminent si une réponse du chatbot est juridiquement acceptable ? :: je pense qu'on peut pas savoir dans notre cas 
+

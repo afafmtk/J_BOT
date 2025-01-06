@@ -1,0 +1,10 @@
+pypdf
+langchain
+langchain_community
+chromadb # Vector storage
+pytest
+boto3
+langchain-aws
+tqdm
+logging
+argparse
