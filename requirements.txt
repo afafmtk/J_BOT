@@ -1,7 +1,7 @@
 pypdf
 langchain
 langchain_community
-chromadb # Vector storage
+chromadb==0.4.14 
 pytest
 boto3
 langchain-aws
@@ -11,3 +11,5 @@ argparse
 streamlit
 langchain_ollama
 langchain_chroma
+pysqlite3-binary
+

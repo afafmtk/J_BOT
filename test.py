@@ -81,9 +81,8 @@ def main():
     st.markdown("<h1 style='color: purple;'><i class='fas fa-balance-scale'></i> Juridique_Bot</h1>", unsafe_allow_html=True)
     
     # Barre latérale avec logo
-    #st.sidebar.image("static/logo_dxc.jpg", use_container_width=True)
-    #st.sidebar.markdown("<h2 style='color: purple;'>Query History</h2>", unsafe_allow_html=True)
-
+    st.sidebar.image("static/logo_dxc.jpg", use_container_width=True)
+    
     if st.sidebar.button("🔄  Nouveau fichier"):
         reset_file_and_chat()
         st.rerun()
