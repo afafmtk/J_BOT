@@ -8,3 +8,5 @@ langchain-aws
 tqdm
 logging
 argparse
+streamlit
+langchain_ollama
