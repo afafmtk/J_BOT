@@ -10,3 +10,4 @@ logging
 argparse
 streamlit
 langchain_ollama
+langchain_chroma
