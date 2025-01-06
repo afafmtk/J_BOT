@@ -1,4 +1,0 @@
-
-* the request is in frensh but the response is in English and frensh
-* les questions hors sujet : le modéle essaye de faire son max pour répondre en se basant sur les doc sauvegarder dans ma db
-* utilise qu'un seul doc dans la generation d'une réponse 
