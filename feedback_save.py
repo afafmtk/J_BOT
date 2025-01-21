@@ -5,7 +5,7 @@ import datetime
 import uuid
 from pathlib import Path
 from load_and_prepare import split_documents, add_to_chroma
-from load_and_prepare2 import extract_text_simple, process_pdf_file
+from load_and_prepare2 import extract_text_simple, extract_text_simple, detect_pdf_format, extract_f_double
 from retrieve import query_rag
 from langchain.schema import Document
 import logging
@@ -32,6 +32,25 @@ def initialize_session_state():
 
     if 'file_processed' not in st.session_state:
         st.session_state.file_processed = False
+
+def process_pdf_file(file_path):
+    format_type = detect_pdf_format(file_path)
+    logger.info(f"📝 Format détecté : {format_type}")
+
+    if format_type == "double":
+        text = extract_f_double(file_path)
+    else:
+        text = extract_text_simple(file_path)
+
+    documents = [Document(page_content=text)]
+    chunks = []
+    for doc in documents:
+        chunks.extend(split_documents([doc]))
+    for chunk in chunks:
+        add_to_chroma([chunk])
+
+    return True
+
 
 
 def save_uploaded_file(uploaded_file):
